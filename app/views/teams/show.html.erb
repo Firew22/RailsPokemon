@@ -1,0 +1,14 @@
+<h1><%= @team.name %></h1>
+
+<h2>Pocket Monsters in this team:</h2>
+<ul>
+  <% @team.pocket_monsters.each do |pocket_monster| %>
+    <li>
+      <%= pocket_monster.name %> (Number: <%= pocket_monster.number %>)
+      <%= image_tag pocket_monster.image, alt: pocket_monster.name if pocket_monster.image.present? %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edit Team', edit_team_path(@team) %> |
+<%= link_to 'Back to Teams', teams_path %>

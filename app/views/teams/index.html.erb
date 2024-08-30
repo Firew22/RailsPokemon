@@ -1,0 +1,12 @@
+<h1>Pokémon Teams</h1>
+
+<%= link_to 'Create New Team', new_team_path %>
+
+<% @teams.each do |team| %>
+  <div>
+    <h2><%= link_to team.name, team_path(team) %></h2>
+    <p>Pokémon: <%= team.pocket_monsters.count %></p>
+  </div>
+<% end %>
+
+<%= link_to 'Back to Pokémon Search', root_path %>

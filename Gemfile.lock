@@ -144,6 +144,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.4-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.16.4-x64-mingw-ucrt)
+      racc (~> 1.4)
     pg (1.5.6)
     pry (0.14.2)
       coderay (~> 1.1)
@@ -233,6 +235,8 @@ GEM
     timeout (0.4.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2024.1)
+      tzinfo (>= 1.0.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     uri (0.13.0)
@@ -251,6 +255,7 @@ GEM
 PLATFORMS
   aarch64-linux
   arm64-darwin-22
+  x64-mingw-ucrt
 
 DEPENDENCIES
   bootsnap (>= 1.4.8)
@@ -275,7 +280,7 @@ DEPENDENCIES
   web-console (>= 4.0.0)
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.3.3p89
 
 BUNDLED WITH
    2.4.19
